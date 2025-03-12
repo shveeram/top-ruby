@@ -10,6 +10,7 @@ def caesar_cipher(text, shift=1)
     end
   end.join
 end
+puts caesar_cipher("What a string!", 5)
 
 def caesar_cipher_v2(text, shift=1)
   alphabet = Array('a'..'z')
@@ -22,3 +23,5 @@ def caesar_cipher_v2(text, shift=1)
 
   text.chars.map {|char| encrypter.fetch(char, char)}.join
 end
+
+puts caesar_cipher_v2("What a string!", 5)
